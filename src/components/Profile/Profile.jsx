@@ -1,7 +1,7 @@
 import css from './Profile.module.css';
 import data from './user.json';
 
-export const Profile = ({ text }) => {
+export const Profile = user => {
   return (
     <div className="css.profile">
       <div className="css.description">
