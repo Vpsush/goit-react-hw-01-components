@@ -1,0 +1,23 @@
+.name {
+  color: red;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.125; /* 109.091% */
+  letter-spacing: -0.22px;
+  text-transform: uppercase;
+}
+.infoFr {
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.friendList {
+  display: flex;
+  flex-direction: row;
+}

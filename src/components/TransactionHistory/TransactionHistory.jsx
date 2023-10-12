@@ -1,6 +1,7 @@
+import transactions from '../../components/data.json/transactions.json';
 export const TransactionHistory = () => {
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
