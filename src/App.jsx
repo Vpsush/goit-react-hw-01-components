@@ -1,6 +1,6 @@
 // import {} from 'components/Profile/Profile';
-import csss from './index.css';
-import css from './components/Statistic/Statistic.module.css';
+import css from './index.css';
+// import css from './components/Statistic/Statistic.module.css';
 import { Profile } from './components/Profile/Profile';
 import user from './components/data.json/user.json';
 import { FriendList } from './components/FriendList/FriendList';
