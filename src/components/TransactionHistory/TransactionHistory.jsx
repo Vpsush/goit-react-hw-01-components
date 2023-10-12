@@ -1,27 +1,37 @@
-import transactions from '../../components/data.json/transactions.json';
-export const TransactionHistory = () => {
-  return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+import css from './TransactionHistory.module.css';
+import transaction from '../../components/data.json/transactions.json';
 
-      <tbody>
-        <tr>
-          <td>Invoice</td>
-          <td>125</td>
-          <td>USD</td>
-        </tr>
-        <tr>
-          <td>Withdrawal</td>
-          <td>85</td>
-          <td>USD</td>
-        </tr>
-      </tbody>
-    </table>
+export const TitleTransaction = () => {
+  return (
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Currency</th>
+      </tr>
+    </thead>
   );
+};
+
+export const TransactionHistory = () => {
+  return transaction.map(transaction => {
+    return (
+      <table className={css.transactionHistory}>
+        {/* <thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
+          </tr>
+        </thead> */}
+        <tbody className={css.fullInfo}>
+          <tr className={css.info} key={transaction.id}>
+            <td className={css.unit}>{transaction.type}</td>
+            <td className={css.unit}>{transaction.amount}</td>
+            <td className={css.unit}>{transaction.currency}</td>
+          </tr>
+        </tbody>
+      </table>
+    );
+  });
 };

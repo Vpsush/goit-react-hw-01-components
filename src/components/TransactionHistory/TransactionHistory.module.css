@@ -1,0 +1,15 @@
+.transactionHistory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css.fullInfo {
+  list-style: none;
+  display: flex;
+  border: 2px solid black;
+  padding: 20px;
+}
+.unit {
+  /* border: 1px solid black; */
+  margin: 0;
+}

@@ -8,7 +8,11 @@ export const FriendList = ({ isOnline }) => {
     return (
       <div className={css.infoFr}>
         <ul className={css.friendList}>
-          <li key={friends.id} className={isOnline ? css.green : css.red}>
+          <li
+            key={friends.id}
+            className={css.totalInfo}
+            {...(isOnline ? css.green : css.red)}
+          >
             <span className={css.status}>{friends.status}</span>
             <img
               className={css.avatar}

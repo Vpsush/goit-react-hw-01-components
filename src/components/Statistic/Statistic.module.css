@@ -2,23 +2,30 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  /* gap: 25px; */
-  /* border: 1px solid black; */
+  padding: 20px;
+  /* padding-left: 0; */
 }
 .item {
   border: 1px solid black;
-  padding: 10px;
+  padding: 20px;
   background-color: rgb(151, 151, 212);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
 }
 .title {
+  margin-top: 20px;
   color: rgb(61, 52, 52);
   font-family: Poppins;
   font-size: 26px;
   font-style: normal;
-  /* align-items: center;
-  justify-content: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .statistics {
   padding: 0 auto;
+  width: auto;
 }

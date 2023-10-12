@@ -1,5 +1,4 @@
 import css from './Profile.module.css';
-
 import data from '../data.json/user.json';
 
 export const Profile = () => {

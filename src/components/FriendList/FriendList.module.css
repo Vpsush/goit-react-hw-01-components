@@ -9,15 +9,20 @@
   letter-spacing: -0.22px;
   text-transform: uppercase;
 }
-.infoFr {
-}
+
 .red {
   color: red;
 }
 .green {
   color: green;
 }
-.friendList {
+/* .friendList {
   display: flex;
   flex-direction: row;
+} */
+.totalInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
