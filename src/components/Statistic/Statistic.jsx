@@ -1,6 +1,7 @@
 import css from './Statistic.module.css';
+// import data from '../data.json/data.json';
 
-export const Statistics = ({ stats, title = false }) => {
+export const Statistics = ({ title = false }) => {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>Upload stats</h2>}

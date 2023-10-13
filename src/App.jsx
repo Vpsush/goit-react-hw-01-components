@@ -8,7 +8,7 @@ import { FriendList } from './components/FriendList/FriendList';
 import { Statistics } from './components/Statistic/Statistic';
 import data from './components/data.json/data.json';
 import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
-import { TitleTransaction } from './components/TransactionHistory/TransactionHistory';
+// import { TitleTransaction } from './components/TransactionHistory/TransactionHistory';
 import transactions from './components/data.json/transactions.json';
 
 export const App = () => {
@@ -23,12 +23,12 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <div className={css.infoFr}>
-        <FriendList isOnline />
+        <FriendList />
       </div>
-      <div className={css.trans}>
-        <TitleTransaction />
-        <TransactionHistory items={transactions} />
-      </div>
+      {/* <div className={css.trans}> */}
+      {/* <TitleTransaction /> */}
+      <TransactionHistory items={transactions} />
+      {/* </div> */}
     </div>
   );
 };

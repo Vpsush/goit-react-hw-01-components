@@ -1,19 +1,15 @@
-// import friends from '/components/FriendList/friends.json';
 import friends from '../../components/data.json/friends.json';
 import css from './FriendList.module.css';
-// import friends from 'path/to/friends.json';
 
-export const FriendList = ({ isOnline }) => {
+export const FriendList = () => {
   return friends.map(friends => {
+    const listItemStyle = {
+      color: friends.isOnline ? 'green' : 'red',
+    };
     return (
       <div className={css.infoFr}>
         <ul className={css.friendList}>
-          <li
-            key={friends.id}
-            className={css.totalInfo}
-            {...(isOnline ? css.green : css.red)}
-          >
-            <span className={css.status}>{friends.status}</span>
+          <li key={friends.id} className="item" style={listItemStyle}>
             <img
               className={css.avatar}
               src={friends.avatar}
