@@ -1,25 +1,31 @@
 import friends from '../../components/data.json/friends.json';
 import css from './FriendList.module.css';
 
-export const FriendList = () => {
-  return friends.map(friends => {
-    const listItemStyle = {
-      color: friends.isOnline ? 'green' : 'red',
-    };
-    return (
-      <div className={css.infoFr}>
-        <ul className={css.friendList}>
-          <li key={friends.id} className="item" style={listItemStyle}>
+export const FriendList = ({ isOnline }) => {
+  return (
+    <div className={css.infoFr}>
+      <ul className={css.friendList}>
+        {friends.map(friend => (
+          <li key={friend.id} className={`${css.item} ${css.withShadow}`}>
+            <span
+              className={friend.isOnline ? css.green : css.red}
+              style={{
+                fontSize: '50px',
+                marginRight: '5px',
+              }}
+            >
+              •
+            </span>
             <img
               className={css.avatar}
-              src={friends.avatar}
+              src={friend.avatar}
               alt="User avatar"
               width="48"
             />
-            <p className={css.name}>{friends.name}</p>
+            <p className={css.name}>{friend.name}</p>
           </li>
-        </ul>
-      </div>
-    );
-  });
+        ))}
+      </ul>
+    </div>
+  );
 };

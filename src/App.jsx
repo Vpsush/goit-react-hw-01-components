@@ -23,7 +23,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <div className={css.infoFr}>
-        <FriendList />
+        <FriendList isOnline />
       </div>
       {/* <div className={css.trans}> */}
       {/* <TitleTransaction /> */}

@@ -17,19 +17,31 @@
 }
 .infoFr {
   display: flex;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   justify-content: center;
   align-items: center;
   margin: 5px;
-  box-shadow: 10px 5px 5px gray;
   border-radius: 5px;
 }
-.friendList {
-}
+
 .item {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   margin: 5px 0;
-  padding: 10px;
+  padding: 10px 60px;
+}
+.withShadow {
+  box-shadow: 10px 5px 5px gray;
+  /* list-style: none; */
+}
+.status {
+  content: '•';
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
 }
