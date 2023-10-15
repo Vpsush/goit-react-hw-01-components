@@ -4,7 +4,7 @@ import css from './index.module.css';
 import { Profile } from './components/Profile/Profile';
 import user from 'dataJson/user.json';
 import { FriendList } from './components/FriendList/FriendList';
-
+import friends from 'dataJson/friends.json';
 import { Statistics } from './components/Statistic/Statistic';
 import data from 'dataJson/data.json';
 import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
@@ -22,7 +22,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <div className={css.infoFr}>
-        <FriendList />
+        <FriendList friends={friends} />
       </div>
       {/* <div className={css.trans}> */}
       {/* <TitleTransaction /> */}
