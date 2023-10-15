@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
 import css from './Statistic.module.css';
-// import data from '../data.json/data.json';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -28,9 +26,4 @@ export const Statistics = ({ title, stats }) => {
       </div>
     </section>
   );
-};
-
-Statistics.propTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.array,
 };
