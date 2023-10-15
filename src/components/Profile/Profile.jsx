@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-import data from '../data.json/user.json';
+// import data from 'dataJson/user.json';
 
-export const Profile = () => {
+export const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <img src={data.avatar} alt="User avatar" className={css.avatar} />
-        <p className={css.name}>{data.username}</p>
-        <p className={css.tag}>{data.tag}</p>
-        <p className={css.location}>{data.location}</p>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
       <ul className={css.stats}>
@@ -27,4 +28,11 @@ export const Profile = () => {
       </ul>
     </div>
   );
+};
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
 };

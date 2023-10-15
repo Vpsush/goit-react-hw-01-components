@@ -1,14 +1,13 @@
 // import {} from 'components/Profile/Profile';
-// import css from './index.css';
 import css from './index.module.css';
-// import css from './components/Statistic/Statistic.module.css';
+
 import { Profile } from './components/Profile/Profile';
-import user from './components/data.json/user.json';
+import user from 'dataJson/user.json';
 import { FriendList } from './components/FriendList/FriendList';
+
 import { Statistics } from './components/Statistic/Statistic';
-import data from './components/data.json/data.json';
+import data from 'dataJson/data.json';
 import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
-// import { TitleTransaction } from './components/TransactionHistory/TransactionHistory';
 import transactions from './components/data.json/transactions.json';
 
 export const App = () => {
@@ -23,7 +22,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <div className={css.infoFr}>
-        <FriendList isOnline />
+        <FriendList />
       </div>
       {/* <div className={css.trans}> */}
       {/* <TitleTransaction /> */}
